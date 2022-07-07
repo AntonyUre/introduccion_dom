@@ -1,0 +1,116 @@
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-secondary: hsl(216, 12%, 8%);
+  --color-tertiary: hsl(213, 19%, 18%);
+  --color-quaternary: hsl(216, 12%, 54%);
+  --color-quinary: hsl(217, 12%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+.popup {
+  background: var(--color-tertiary);
+  padding: 20px;
+  width: 350px;
+  border-radius: 20px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+.popup-img img {
+  background: var(--color-quaternary);
+  padding: 10px;
+  border-radius:50%;
+  width: 20px;
+}
+.popup-text {
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: bold;
+}
+.popup-text h3 {
+  color: var(--color-white);
+  font-size: 25px;
+  font-weight: bold;
+}
+.popup-text p {
+  margin-top: 10px;
+  color: var(--color-quaternary);
+  font-size: 15px;
+  font-weight:400;
+  line-height: 23px;
+}
+.popup-dot {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-dot .btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 700;
+  background: var(--color-quaternary);
+  color: var(--color-white);
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.popup-dot .btn:hover {
+  opacity: 1;
+  transition: 0.4s;
+  background: var(--color-quinary);
+}
+.popup-send{
+  margin-top: 20px;
+}
+.popup-send .btn-send {
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 19px;
+  font-weight: 700;
+  transition: 0.5s;
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+.popup-send .btn-send:hover {
+  transition: 0.5s;
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+/* css mensaje */
+
+.mensaje {
+  position: absolute;
+  bottom: -300px;
+  background: var(--color-quaternary);
+  right: 0;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 1s;
+  opacity: 0;
+}
+.mensaje-enviado {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 1s;
+  opacity: 1;
+}
+
